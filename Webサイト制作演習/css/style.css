@@ -1,0 +1,319 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #3D6595;
+    margin: 0 auto;
+}
+
+.container_header {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header img {
+    font-weight: 154px;
+    vertical-align: bottom;
+}
+
+/* ヘッダー　メニュー */
+header ul {
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    margin-left: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* トップ　エリア */
+.area_top {
+    position: relative;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.area_top img {
+    width: 100%;
+
+}
+
+/* トップ　フレーズ */
+.phrase_top {
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+
+.cp,
+.sf {
+    text-align: center;
+}
+
+.cp {
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sf {
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* クライアントケース セクション */
+.section_cliantcase {
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* クライアントケース タイトル */
+.ttl_cliantcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ttl_cliantcase h2 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* クライアントケース 記事 */
+.articles_cliantcase {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    width: 316px;
+    height: 408px;
+    flex-shrink: 0;
+    gap: 48px;
+}
+
+.articles_cliantcase .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.article span {
+    font-size: 16px;
+}
+
+/* チーム　セクション */
+.section_team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #3D6595;
+}
+
+/* チーム タイトル */
+.ttl_team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ttl_team h2 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* チーム 記事 */
+.article_team {
+    display: flex;
+    gap: 128px;
+    margin-top: 64px;
+}
+
+.text_article {
+    width: 544px;
+    height: 206px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.articles_team img {
+    max-width: 100%;
+}
+
+.text_article h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* ソリューション セクション*/
+.section_solutiion {
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ソリューション タイトル*/
+.ttl_solutiion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.ttl_solutiion h2 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* ソリューション スライド*/
+.box_solution {
+    margin: 0px 10px 0px 10px;
+}
+
+.img_solution {
+    width: 272px;
+    height: 205px;
+    object-fit: cover;
+}
+
+/* コンタクト　セクション */
+.section_contact {
+    background-color: white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contact {
+    max-width: 928px;
+    max-height: 950px;
+    flex-shrink: 0;
+    background-color: #3D6595;
+    padding: 80px 96px 80px 96px;
+    color: white;
+}
+
+/* コンタクト　タイトル */
+.ttl_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ttl_contact h2 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* コンタクト　フォーム */
+.field_form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.form_contact {
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+}
+
+.field_form label {
+    width: 202px;
+}
+
+.field_form input[type="text"] {
+    width: 544px;
+    height: 40px;
+}
+
+/* 内容 */
+.field_form input#message {
+    width: 544px;
+    height: 40px;
+}
+
+.textarea_form {
+    resize: none;
+    width: 544px;
+    height: 196px;
+}
+
+/* 送信 */
+.form_contact input[type=submit] {
+    background-color: #3C3B3B;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 6px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* フッター */
+footer {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #4C4C4D;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
